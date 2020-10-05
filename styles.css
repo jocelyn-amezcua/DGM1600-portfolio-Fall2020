@@ -1,5 +1,17 @@
+/* Base reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     box-sizing: border-box;
+    /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -7,27 +19,48 @@ body {
     margin: 0;
 }
 
-nav {
-    background: red;
+#navbar {
     display: flex;
     justify-content: flex-end;
+    background-color: #7D3BBF;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-ul {
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+.nav-list a:hover {
+    background: #D94EC2;
+}
+
+.nav-list {
     display: flex;
-}
-
-ul a:hover {
-    background: blue;
-}
-
-li {
     list-style-type: none;
 }
 
+ul a:hover {
+    background: #D94EC2;
+}
+
 #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
     background-color: rgb(30, 43, 100);
     color: #fff;
+    background-image: linear-gradient(0deg, #7D3BBF 0%, #D94EC2 90%);
+    font-size: x-large;
 }
 
 .projects-grid {
@@ -43,7 +76,7 @@ li {
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: #45567d;
+    background: #7D3BBF;
 }
 
 a {
@@ -60,8 +93,43 @@ a {
     flex-wrap: wrap;
 }
 
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
 .contact-details {
     font-size: 2.4rem;
     text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: #7D3BBF;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+@media (max-width: 28.75em) {
+    .contact-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    #welcome-section {
+        background-image: linear-gradient(270deg, #AB04D9 0%, #D94EC2 100%);
+    }
 }
