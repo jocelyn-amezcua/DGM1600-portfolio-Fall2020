@@ -1,0 +1,117 @@
+body {
+    background-color: #3400ce;
+    margin: 20px;
+    font-family: sans-serif;
+  }
+  
+  main {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  h1,
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #cd009b;
+    margin: 0;
+  }
+  
+  h4 {
+    color: #fff;
+    margin: 5px 0 12px 0;
+  }
+  
+  .header-pic {
+    height: 150px;
+  }
+  
+  .profile-pic {
+    height: 195px;
+  }
+  
+  #info {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .bio {
+    width: 100%;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #choose-list {
+    background-color: #9900ce;
+    padding: 12px;
+    length: auto;
+  }
+  
+  #name-date {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #name-date h2 {
+    color: #cd009b;
+    margin: 0;
+    font: 1.5em sans-serif;
+  }
+  
+  #tech {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .excited {
+    background-color: #9900ce;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .excited p {
+    color: #fff;
+  }
+  
+  time {
+    color: #cd009b;
+    font: 1.5em sans-serif;
+  }
+  
+  ul {
+    margin: 0px;
+    padding-left: 15px;
+    color: #ccc;
+  }
+  
+  figure {
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  figure > img {
+    max-height: 150px;
+    max-width: 180px;
+  }
+  
+  figcaption {
+    background-color: rgba(10, 10, 10, 0.5);
+    color: #ccc;
+    max-width: 180px;
+    text-align: center;
+    position: relative;
+    top: -20px;
+  }
+  
+  footer {
+    color: #cd009b;
+    text-align: center;
+  }
+  

@@ -1,0 +1,24 @@
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+    margin: 1rem;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+figure img {
+    max-height: 12rem;
+}
