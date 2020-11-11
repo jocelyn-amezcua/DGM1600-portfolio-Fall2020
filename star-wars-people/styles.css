@@ -7,9 +7,9 @@
 .mainHeader {
     display: flex;
     justify-content: space-around;
-    background-color: beige;
-    margin: 1rem;
+    margin: 2rem;
 }
+
 
 #main {
     display: flex;
@@ -17,8 +17,61 @@
     justify-content: space-around;
 }
 
+button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    border-style: solid;
+    border-color: #FFCC06;
+    border-radius: 4px;
+    background-color: #FFCC06;
+    color: #fff;
+    cursor: pointer;
+}
 
+button:hover {
+    box-shadow: 0 5px 50px 0 #FFCC06 inset, 0 5px 50px 0 #FFCC06;
+}
 
 figure img {
     max-height: 12rem;
+}
+
+
+* {
+    margin: 0x;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    grid-gap: 20px;
+}
+
+#logo {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    
+}
+
+figcaption {
+    text-align: center;
+    color: #fff;
+    background-color: #FFCC06;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    padding: 15px 5px;
+}
+
+
+body {
+    background-image: url("../images/star-wars-stars.jpg");
+    background-color: #091447;
 }

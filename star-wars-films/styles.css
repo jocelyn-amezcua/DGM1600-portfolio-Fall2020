@@ -7,6 +7,7 @@
 main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 figure {
@@ -15,5 +16,25 @@ figure {
 
 figcaption {
     text-align: center;
-    background-color: darkgray;
+    color: #fff;
+    background-color: #FFCC06;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 15px 5px;
+}
+
+#logo {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    
+}
+
+body {
+    background-image: url("../images/star-wars-stars.jpg");
+    background-color: #091447;
 }
