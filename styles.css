@@ -17,11 +17,6 @@ html {
 
 body {
     margin: 0;
-    font-family: Helvetica, sans-serif;
-}
-
-p { 
-    color: #fff;
 }
 
 #navbar {
@@ -73,7 +68,7 @@ ul a:hover {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 2rem;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
 }
