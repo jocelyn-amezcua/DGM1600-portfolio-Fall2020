@@ -17,7 +17,7 @@ for (let step = 0; step < 7; step++) {
     figure.appendChild(figImg)
     figure.appendChild(figCaption)
 
-    main.appendChild(figure)
+    main.appendChild(figure) 
 } 
 
 
