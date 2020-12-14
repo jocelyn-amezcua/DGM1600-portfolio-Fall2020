@@ -3,20 +3,6 @@
     box-sizing: border-box;
 }
 
-button {
-    display: flex;
-    justify-content: center;
-    padding: .5rem;
-    border: 1px solid;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.loadbutton {
-    justify-content: center;
-}
-
-
 .pokemonGrid{
     display: flex;
     flex-wrap: wrap;
@@ -25,10 +11,9 @@ button {
 }
 
 .scene {
-    width: 223px;
-    height: 310px;
+    width: 200px;
+    height: 260px;
     border: 1px solid #CCC;
-    border-radius: 15px;
     margin: 10px;
     perspective: 600px;
 }
@@ -51,11 +36,10 @@ button {
 
 .card_face_front {
     background: red;
-    border: 1px solid;
-    border-radius: 15px;
 }
 
 .card_face_back {
+    background: blue;
     transform: rotateY(180deg);
 }
 
