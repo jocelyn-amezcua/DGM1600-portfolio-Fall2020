@@ -25,7 +25,7 @@ function loadPage() {
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
 
-//load button
+/** load button
 const loadButton = document.querySelector('button')
     loadButton.className = 'loadbutton'
 
@@ -45,7 +45,7 @@ loadButton.addEventListener('click', () => {
         pokemonGrid.appendChild(loadImage)
     })
 })
-//load button
+**/
 
 
 function populatePokeCard(pokemon) {
