@@ -16,24 +16,33 @@
     justify-content: center;
 } **/
 
-.pokeheader {
+body {
+    background-color: #262626;
+}
+
+
+#pokeheader {
+    max-height: 255px;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
+
 
 
 .pokemonGrid{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 2%;
 
 }
 
 .scene {
     width: 223px;
     height: 310px;
-    border: 1px solid #CCC;
+    border: 1px solid #C4C4C4;
     border-radius: 15px;
     margin: 10px;
     perspective: 600px;
@@ -61,6 +70,13 @@
     border: 1px solid;
     border-radius: 15px;
     padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.frontlabeltext {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    padding-left: 10px;
+    color: #FFEB3B;
 }
 
 .card_face_back {
