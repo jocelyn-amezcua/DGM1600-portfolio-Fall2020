@@ -79,6 +79,16 @@ body {
     color: #FFEB3B;
 }
 
+.frontweight {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    padding-left: 12px;
+    padding-top: 4px;
+    color: #FFEB3B;
+    font-size: 10px;
+}
+
+
 .card_face_back {
     transform: rotateY(180deg);
 }

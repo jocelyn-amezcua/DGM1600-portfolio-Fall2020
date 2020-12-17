@@ -13,7 +13,7 @@ async function getAPIData(url) {
 
 
 function loadPage() {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon`).then
+    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then
     (async (data) => {
         for (const pokemon of data.results) {
             await getAPIData(pokemon.url).then((pokeData) => {
@@ -66,13 +66,19 @@ function populatePokeCard(pokemon) {
 function populateCardFront(pokemon) {
     let cardFront = document.createElement('div')
         cardFront.className = `card_face card_face_front`
-    let frontLabel = document.createElement('p')
-    let frontImage = document.createElement('img')
-    frontLabel.textContent = pokemon.name
+    let frontLabel = document.createElement('h4')
+        frontLabel.textContent = pokemon.name
         frontLabel.className = `frontlabeltext`
-    frontImage.src = `../pokemon/images/${getImageFileName(pokemon)}.png`
+    let frontWeight = document.createElement('p')
+        frontWeight.textContent = `weight:${pokemon.weight}lbs.`
+        frontWeight.className = `frontweight`
+    let frontWeightNum = document.createElement('p')
+    let frontImage = document.createElement('img')
+        frontImage.src = `../pokemon/images/${getImageFileName(pokemon)}.png`
     cardFront.appendChild(frontImage)
     cardFront.appendChild(frontLabel)
+    cardFront.appendChild(frontWeight)
+    cardFront.appendChild(frontWeightNum)
     return cardFront
 }
 
