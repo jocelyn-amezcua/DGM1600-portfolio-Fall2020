@@ -1,5 +1,5 @@
 import { films } from '../data/films.js'
-import { getLastNumber } from ''
+import { getLastNumber } from '../data/utils.js'
 
 const main = document.querySelector('main')
 
